@@ -9,7 +9,7 @@ const JobListings = ({isHome=false}) => {
     // const JobListings= isHome?jobs.slice(0,3):jobs;
     useEffect(()=>{
       const fetchJobs=async()=>{
-        const apiURL=isHome? '/api/jobs? _limit=3':'/api/jobs?'
+        const apiURL=isHome? 'https://jobs-server-api-ashy.vercel.app/? _limit=3':'https://jobs-server-api-ashy.vercel.app/?'
 
         try {
           
